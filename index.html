@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 13</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 640px) {
+            .custom-col {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        @media (min-width: 641px) and (max-width: 1023px) {
+            .custom-col {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+        @media (min-width: 1024px) {
+            .custom-col {
+                flex: 0 0 33.3333%;
+                max-width: 33.3333%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/id/1018/1200/400" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/1015/1200/400" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/1019/1200/400" class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+
+    <div class="container">
+        <div class="row d-flex flex-wrap">
+            <div class="custom-col mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1025/400/200" class="card-img-top" alt="Cachorro">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Conteúdo personalizado do Card 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1024/400/200" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Conteúdo personalizado do Card 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1020/400/200" class="card-img-top" alt="Paisagem">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Conteúdo personalizado do Card 3.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1021/400/200" class="card-img-top" alt="Cidade">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 4</h5>
+                        <p class="card-text">Conteúdo personalizado do Card 4.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1022/400/200" class="card-img-top" alt="Montanha">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 5</h5>
+                        <p class="card-text">Conteúdo personalizado do Card 5.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1023/400/200" class="card-img-top" alt="Praia">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 6</h5>
+                        <p class="card-text">Conteúdo personalizado do Card 6.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
